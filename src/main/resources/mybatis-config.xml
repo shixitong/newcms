@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <properties>
-        <property name="dialectClass" value="com.quick4j.core.feature.orm.dialect.MySql5Dialect"/>
+        <property name="dialectClass" value="com.newcms.core.feature.orm.dialect.MySql5Dialect"/>
     </properties>
 
     <!-- 配置mybatis的缓存，延迟加载等等一系列属性 -->
@@ -57,13 +57,13 @@
     </settings>
 
     <typeAliases>
-        <package name="com.quick4j.web.model"/>
-        <package name="com.quick4j.web.enums"/>
+        <package name="com.newcms.web.model"/>
+        <package name="com.newcms.web.enums"/>
     </typeAliases>
 
     <plugins>
-        <plugin interceptor="com.quick4j.core.feature.orm.mybatis.PaginationResultSetHandlerInterceptor"/>
-        <plugin interceptor="com.quick4j.core.feature.orm.mybatis.PaginationStatementHandlerInterceptor"/>
+        <plugin interceptor="com.newcms.core.feature.orm.mybatis.PaginationResultSetHandlerInterceptor"/>
+        <plugin interceptor="com.newcms.core.feature.orm.mybatis.PaginationStatementHandlerInterceptor"/>
     </plugins>
 
 </configuration>
